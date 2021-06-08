@@ -66,41 +66,34 @@
 .item__deliver-title {
     font-size: 1.8rem;
     margin-top: 2.4rem;
-    margin-bottom: .4rem;
+    line-height: 2.8rem;
     color: #79C8C7;
 }
 .main__deliver-list {
     @include rest-list;
     display: flex;
     margin-top: 9.2rem;
+    justify-content: space-between;
 }
 .main__deliver-item {
     width: 35rem;
     height: 31.3rem;
-    margin-left: 3rem;
     position: relative;
     background: url(../images/“.svg) no-repeat;
     background-position:  top  center;
-    &::before {
-        @include baElements(6.6rem, 6.6rem);
-        background: url(../images/kady.png);
-        position: absolute;
-        top: 20rem;
-        left: 14rem;
-    }
-    &:nth-child(2)::before {
-        background: url(../images/Aiysha.png);
-    }
-    &:nth-child(3)::before {
-        background: url(../images/arthur.png);
-    }
 }
 i {
     font-size: 1.3rem;
 }
 .item__deliver-des {
     font-size: 1.5rem;
+    line-height: 2.5rem;
     margin-top: 3.6rem;
+}
+.item__img {
+    position: absolute;
+    bottom: 0;
+    left: 14rem;
 }
 .box-run {
     height: 20rem;
