@@ -12,3 +12,8 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+@mixin rest-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

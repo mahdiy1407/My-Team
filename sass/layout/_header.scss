@@ -1,0 +1,54 @@
+.header {
+    height: 70rem;
+    background: #014E56;
+    background-image:  url(../images/background.png), url(../images/background_2.png);
+    background-repeat: no-repeat;
+    background-position: right 16.5rem bottom ,left center;
+}
+.nav__list {
+    @include rest-list;
+    display: flex;
+}
+.nav__link {
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.nav__link:hover {
+    color: #F67E7E;
+    transition: ease-in 0.2s all;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+    padding-top: 7.3rem;
+}
+.logo  {
+    margin-right: 8rem;
+}
+.nav__item {
+    margin-right: 4rem;
+}
+.container:nth-child(2) {
+    padding-top: 12.9rem;
+    justify-content: space-between;
+    position: relative;
+}
+.header__title {
+    font-size: 10rem;
+    margin: 0;
+    span {
+        color: #F67E7E;
+    }
+}
+.header__description {
+    width: 445px;
+    font-size: 1.8rem;
+    margin-top: auto;
+    &::before {
+        @include baElements (5rem , .4rem);
+        background: #79C8C7;
+        position: absolute;
+        bottom: 19rem;
+    }
+}
